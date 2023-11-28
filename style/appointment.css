@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 /*
     THE BODY
@@ -33,6 +33,7 @@ body{
 
 .page_title{
     margin-top: 170px;
+    margin-bottom: 30px;
 }
 
 .page_title h2{
@@ -44,6 +45,27 @@ body{
     letter-spacing: 0.4ch;
     font-size: 50px;
     padding: 20px 0;
+
+    text-shadow: 0px 0px 5px blue;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+
+    margin-left: 20%;
+    margin-right: 20%;
+
+    transition: 0.3s linear;
+}
+
+.page_title h2:hover{
+    margin-left: 0;
+    margin-right: 0;
+
+    background-color: white;
+    color: black;
+    text-shadow: none;
+
+    border-left: none;
+    border-right: none;
 }
 
 /*
@@ -51,6 +73,9 @@ body{
 */
 
 .booking_card{
+    margin-left: 10%;
+    margin-right: 10%;
+
     background-color: rgba(200, 0, 0, 0.2);
     padding: 30px;
     border-radius: 5px;
@@ -65,7 +90,11 @@ body{
 .booking_card .booking_wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.booking_left{
+    max-width: 50%;
 }
 
 .booking_left img{
@@ -73,7 +102,73 @@ body{
     box-shadow: 1px 1px 10px black;
 }
 
+
 /*
     THE FORM
 */
 
+.booking_right{
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 2px red solid;
+    border-radius: 3px;
+}
+
+.booking_right form{
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.booking_right form label{
+    font-family: 'Nunito';
+    font-size: 18px;
+    text-shadow: 0px 0px 2px white ;
+    color: rgb(255, 255, 255);
+}
+
+.booking_right form input{
+    width: 200px;
+    height: 24px;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(170, 170, 170, 0.9);
+    border: 1px black solid;
+    font-family: sans-serif;
+}
+
+.booking_right form input[type="datetime-local"]{
+    font-size:13px;
+}
+
+.booking_right form input:focus{
+    background-color: rgb(10, 10, 10, 1);
+    color: rgb(200, 200, 200);
+}
+
+
+#longlabel{
+    white-space: nowrap;
+}
+
+.booking_right form button{
+    text-align: center;
+    margin-left: auto;
+    margin-top: 30px;
+    padding: 14px 14px 14px 0px;
+    width: 500px;
+    font-size: 22px;
+    font-family: 'Open sans';
+    text-transform: uppercase;
+
+    background-color: #fdb657;
+    color: #002f3b;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.booking_right form button:hover{
+    color: #fdb657;
+    background-color: #002f3b;
+}

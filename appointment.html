@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="page_title container">
+        <div class="page_title">
             <h2>
                 Book an appointment
             </h2>
@@ -48,27 +48,33 @@
         <div class="booking_card container">
             <div class="booking_wrapper">
                 <div class="booking_left">
-                    <img src="imgs/dental_chair.jpg" alt="Dental Chair Image" height="600px">
+                    <img src="imgs/dental_chair.jpg" alt="Dental Chair Image" height="500px">
                 </div>
                 <div class="booking_right">
-                    <form method="post" action="/submit">
-                        <label>First Name:</label> <input type="text"> <label>Last Name:</label> <input type="text">
+                    <form method="post">
+                       
+                        <label>First Name:</label> <input required placeholder="First Name" type="text" minlength="3"> 
+                        <br> 
+                        <label>Last Name:</label> <input required placeholder="Last Name" type="text" minlength="3">  
                         <br>
-                        <label>Address:</label><input type="text">
+                        <label>Address:</label><input required placeholder="Address" type="text" minlength="3">
                         <br>
-                        <label>Email Address:</label><input type="email"> 
+                        <label>Email Address:</label><input required placeholder="Email Address" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> 
                         <br>
-                        <label>Phone Number:</label><input type="tel"> 
+                        <label>Phone Number:</label><input required placeholder="Phone Number" type="tel" pattern="[0-9]{1, 10}" minlength="1"> 
                         <br>
-                        <label>Please select the preferred date and time of appointment:</label>
+                        <label id="longlabel">Please select the preferred <br>
+                            date and time of appointment:</label>
                         <br>
-                        <input type="datetime-local">
+                        <input required type="datetime-local">
                         <br>
                         <button type="submit">Create an appointment</button>
                     </form>
                 </div>
             </div>
         </div>
+
+
     </section>
 </body>
 </html>
