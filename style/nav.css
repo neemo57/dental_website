@@ -1,0 +1,167 @@
+/*
+    COMMON CLASSES
+*/
+
+.flex-no-wrap{
+    flex-wrap: nowrap;
+}
+
+/*
+    _____ CSS BODY _____
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    min-height: 100%;
+    background: url("../imgs/plexus-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.page{
+
+}
+
+.container{
+    margin-left:  6%;
+    margin-right: 6%;
+}
+
+.header_wrapper_outer{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    height: 0px;
+    transition: height 0.1s ease-in 0s;
+}
+
+.header_wrapper_outer:hover{
+    height: 145px;
+}
+
+.header_wrapper{
+    background-color: rgba(0, 0, 100, 0.4);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.5s ease;
+}
+
+
+header{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 0px;
+    align-items: center;
+    max-height: 20%;
+}
+
+.logo img{
+    max-height: 100px;
+}
+
+.rightnav{
+    position: relative;
+}
+
+.rightnav ul{
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.rightnav ul li{
+}
+
+.rightnav>ul>li>a{
+    padding: 0 20px;
+    color: rgb(220, 0, 0 );
+    font-family: 'Exo 2';
+    font-size: x-large;
+    transition: 0.2s linear;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+.rightnav>ul>li>a:visited{
+    color: rgb(220, 0, 0 );
+}
+
+.rightnav>ul>li>a:hover{
+    color: white;
+    border-bottom: 2px white solid;
+}
+
+.rightnav > ul > li:not(:last-child)::after{
+    content: "|";
+    color: yellow;
+    font-size: x-large;
+}
+/*
+    NAVIGATION SUB MENU
+*/
+
+.menuactivator{
+    white-space: nowrap;
+}
+
+.innermenubtn{
+    display: inline;
+    color: white;
+}
+
+#submenu {
+    position: absolute;
+    list-style: none;
+    right: 0;
+    bottom: -70px;
+    overflow: visible;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.innerlist{  
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(140, 0, 0);
+    border: 1px black solid;
+    margin-bottom: 3px;
+}
+
+.innerlist{
+    color: yellow;
+}
+
+.innerlink{    
+    padding: 0 20px;
+    color: yellow;
+    font-family: 'Exo 2';
+    font-size: x-large;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+
+.innerlink:visited{
+    color: yellow;
+}
+
+.innerlink:hover{
+    color: black;
+    background-color: white;
+}

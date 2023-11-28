@@ -86,10 +86,11 @@ header{
     list-style: none;
     display: flex;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
 .rightnav ul li{
-    display: inline;
 }
 
 .rightnav>ul>li>a{
@@ -99,6 +100,7 @@ header{
     font-size: x-large;
     transition: 0.2s linear;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 
@@ -121,7 +123,7 @@ header{
 */
 
 .menuactivator{
-
+    white-space: nowrap;
 }
 
 .innermenubtn{
@@ -179,7 +181,8 @@ header{
 */
 
 .services_intro{
-    margin-top: 170px;
+    margin-top: 0px;
+    padding-top: 170px;
 }
 
 .services_intro h3{
@@ -222,9 +225,6 @@ header{
     align-content: center;
     justify-content: center;
     position: relative;
-}
-
-.services_intro img{
 }
 
 /*
@@ -282,12 +282,16 @@ header{
     padding: 10px 40px;
     margin-left: 90px;
     margin-right: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px red solid;
+    border-radius: 3px;
     background-color: rgb(160, 203, 248, 0.85);
+    box-shadow: 2px 2px 5px blue;
 }
 
 .service_card:hover{
-    background-color: rgb(160, 203, 255, 0.94);
+    background-color: rgb(140, 200, 255, 0.94);
 }
 
 .service_card .service_left{
