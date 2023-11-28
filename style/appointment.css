@@ -1,0 +1,79 @@
+/*
+    Font Imports
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Exo+2:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto&family=Sofia+Sans+Semi+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+
+
+/*
+    THE BODY
+*/
+
+body{
+    background: url("../imgs/app.jpeg");
+    background-size: cover;
+}
+
+/*
+    MODIFYING THE NAV BAR COLORS
+*/
+
+.header_wrapper_outer{
+    background-color: rgb(100, 100, 0);
+}
+
+
+/*
+    BOOK AN APPOINTMENT TITLE 
+*/
+
+.page_title{
+    margin-top: 170px;
+}
+
+.page_title h2{
+    font-family: 'Dosis';
+    color: white;
+    text-align: center;
+    word-spacing: 1ch;
+    text-transform: uppercase;
+    letter-spacing: 0.4ch;
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+/*
+    THE BOOKING CARD
+*/
+
+.booking_card{
+    background-color: rgba(200, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.booking_card:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+}
+
+.booking_card .booking_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.booking_left img{
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px black;
+}
+
+/*
+    THE FORM
+*/
+
