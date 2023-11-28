@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Our Services</title>
+        <link rel="stylesheet" type="text/css" href="style/services.css">
+        
+        <script src="js/script.js"></script>
+        <script src="js/img_slider.js"></script>
+    </head>
+
+<body>
+    <section class="page">
+            <div class="header_wrapper_outer">
+                <div class="header_wrapper" id="header">
+                    <header class="">
+                        <div class="logo">
+                            <a href="index.html"><img src="imgs/logo.png"></a>
+                        </div>
+
+                        <div class="rightnav">
+                            <ul>
+                                <li class="nav-li flex-no-wrap"><a href="#" class="nav-link">Services</a></li>
+                                <li class="nav-li flex-no-wrap"><a href="#" class="nav-link">Book an appointment</a></li>
+                                <li class="nav-li flex-no-wrap"><a href="#" class="nav-link">Our Team</a></li>
+                                <li class="nav-li flex-no-wrap"><a href="#" class="nav-link">About Us</a></li>
+
+                                <li class="nav-li flex-no-wrap menuactivator">
+                                    <a href="#" class="nav-link">
+                                        Contact Us</a>
+                                    <span class="innermenubtn" onclick="hideUnhideMenu()" id="submenubtn">&#9650;
+                                    </span>
+                                    <ul id="submenu">
+                                        <li class="innerlist"><a href="#" class="innerlink">Phone</a></li>
+                                        <li class="innerlist"><a href="#" class="innerlink">Email</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <div class="services_intro">
+                <h3><strong class="services_title">Our Services</strong></h3>
+                <div class="img_slider container">
+                    <img src="imgs/dental_pic_0.jpg" alt="Dental Inside" id="sliderimage">
+                    <button onclick="slider()" class="left_arrow arrow"><a href="#"><img src="imgs/left.png" alt="Left Arrow"></a></button>
+                    <button onclick="slider_right()" class="right_arrow arrow"><a href="#"><img src="imgs/right.png" alt="Right Arrow"></a></button>
+                </div>
+            </div>
+
+            <div class="service_details container">
+
+                <div class="service_card">
+                    <div class="service_left">
+                        <div class="service_icon_wrapper">
+                            <img src="imgs/service_icon.png" alt="Service Icon">
+                        </div>
+                    </div>
+                    <div class="service_right">
+                        <div class="service_name"><h3>Comprehensive Dental Care</h3></div>
+                        <div class="service_desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At deserunt iure accusamus doloremque, culpa quisquam repellendus! Ipsa quisquam omnis asperiores aut tempore dolore necessitatibus distinctio iusto repudiandae? Natus, rerum numquam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service_card">
+                    <div class="service_left">
+                        <div class="service_icon_wrapper">
+                            <img src="imgs/service_icon.png" alt="Service Icon">
+                        </div>
+                    </div>
+                    <div class="service_right">
+                        <div class="service_name"><h3>Comprehensive Dental Care</h3></div>
+                        <div class="service_desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At deserunt iure accusamus doloremque, culpa quisquam repellendus! Ipsa quisquam omnis asperiores aut tempore dolore necessitatibus distinctio iusto repudiandae? Natus, rerum numquam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+</body>
+
+</html>
