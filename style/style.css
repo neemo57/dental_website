@@ -22,14 +22,12 @@
 }
 
 .infowrapper{
-    padding-top: 30%;
+    padding-top: 35%;
     padding-left: 10%;
     max-width: 50%;
 }
 
 .info{
-    left: 5%;
-    bottom: 30%;
     background-color: rgba(255, 255, 255, 0.6);
     border: 2px rgba(0, 0, 0, 0.4) solid;
     padding: 30px 30px;
@@ -45,12 +43,12 @@
 
 .info h2{
     font-family: 'Roboto';
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .info p{
     font-family: 'Josefin Sans';
-    font-size: x-large;
+    font-size: 20px;
     text-align: right;
     text-transform: uppercase;
     white-space: nowrap;
@@ -103,16 +101,14 @@
 }
 
 .intro .left .imgcontainer{
-    max-width: 80%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 20%;
+    padding: 50px 0;
 }
 
 .intro .left .imgcontainer img{
     width: 100%;
     border: 1px black solid;
     border-radius: 9px;
+    height: 600px;
 }
 
 .intro .right{
@@ -129,7 +125,6 @@
    font-family: 'Roboto';
    font-size: 50px;
    text-align: center;
-   text-decoration: underline;
    padding-top: 20px;
 }
 
@@ -137,8 +132,8 @@
     text-align: justify;
     margin-top: 7%;
     font-family: sans-serif;
-    font-size: 22px;
-    padding: 6% 3%;
+    font-size: 15px;
+    padding: 0% 3% 3% 3%;
     transition: 0.1s ease-in;
     background-color: rgba(116, 137, 252, 0.3);   
     border-radius: 9px;
@@ -185,8 +180,6 @@
     width: 0%;
     left: 0;
     padding:0;
-    border-left: gray 0px solid;
-    border-right: gray 0px solid;
     overflow: hidden;
     transition: none;
 }
