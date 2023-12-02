@@ -1,0 +1,47 @@
+/*
+    Font Imports
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Exo+2:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto&family=Sofia+Sans+Semi+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+/*
+    OVERIDING BODY AND SOME COMMON NAVBAR CLASSES
+*/
+
+body{
+    background: url("../imgs/laser_back.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.rightnav ul li a{
+    color: rgb(255, 0, 0);
+}
+
+.rightnav ul li a:visited{
+    color: rgb(255, 0, 0);
+}
+
+/*
+    CONTACT US TITLE
+*/
+
+.contactus_title{
+    margin-top: 145px;
+}
+
+.contactus_title h2{
+    font-family: 'DM sans';
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    background-color: yellow;
+    transition: 0.4s ease-in;
+    font-weight: 700;
+}
+
+

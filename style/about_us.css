@@ -1,7 +1,109 @@
+/*
+    Font Imports
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Exo+2:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto&family=Sofia+Sans+Semi+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+/*
+    OVERRIDING SOME BODY AND NAV-BAR PROPERTIES
+*/
+
 body{
     background-color: gray;
     min-height: 100%;
-    background: url("../imgs/plexus-background.jpg");
+    background: url("../imgs/heart_bg.png");
     background-size: cover;
     background-attachment: fixed;
 }
+
+.header_wrapper{
+    background-color: rgba(10, 10, 0, 0.7);
+}
+
+/*
+    OUR TEAM TITLE
+*/
+
+.title{
+    margin-top: 145px;
+}
+
+.title > h2{
+    font-family: 'DM sans';
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    background-color: yellow;
+    transition: 0.4s ease-in;
+    font-weight: 700;
+}
+
+/* 
+    DENTIST'S BIO
+*/
+
+.team {
+    
+}
+
+.team > div{
+    display: flex;
+    flex-direction: row;
+}
+
+.team>div:nth-of-type(2n+1){
+    flex-direction: row-reverse;
+}
+
+
+.introcard{
+    margin-top: 30px;
+    background-color: rgb(100, 100, 100, 0.8);    
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.left_card{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_card .imgwrapper img{
+    max-height: 500px;
+    border-radius: 5px;
+}
+
+.right_card{
+    padding: 30px;
+}
+
+.right_card .introfield{
+    padding: 20px 0 0 0;
+    background-color: black;    
+    height: 500px;
+    border-radius: 5px;
+}
+
+.right_card .introfield h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Merriweather';
+    color: yellow;
+}
+
+.right_card .introfield p{
+    padding: 30px 50px 0px 50px;
+    font-size: 18px;
+    color: white;
+    line-height: 1.4;
+    font-family: 'Josefin Sans';
+    text-align: justify;
+}
+
+
