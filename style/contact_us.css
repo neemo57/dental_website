@@ -25,6 +25,19 @@ body{
     color: rgb(255, 0, 0);
 }
 
+
+#submenu > li > a{
+   color: yellow; 
+}
+
+#submenu > li > a:visited{
+    color: yellow;
+}
+
+#submenu > li > a:hover{
+    color: black;
+}
+
 /*
     CONTACT US TITLE
 */
@@ -42,6 +55,87 @@ body{
     background-color: yellow;
     transition: 0.4s ease-in;
     font-weight: 700;
+    color: black;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contactus_form{
+    margin-top: 20px;
+}
+
+/*
+    FORM
+*/
+
+.formwrapper{
+    background: rgba(250, 35, 193, 0.9);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px magenta solid;
+}
+
+.form_left{
+    padding-left: 30px;
+}
+
+.formwrapper .form_left form{
+    padding: 50px 30px;
+    
+}
+
+.formwrapper .form_left form label{
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 0px 10px;
+    color: rgb(255, 255, 255);
+}
+
+.formwrapper .form_left form input{
+    height: 40px;
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px black solid;
+    margin-bottom: 10px;
+    display: block;
+    text-align: right;
+    margin-right: 0px;
+    width: 300px;
 }
 
 
+
+
+/*
+    TEXT AREA
+*/
+form textarea{
+    display: block;
+    border: 1px solid blue;
+    font-size: 15px;
+    width: 300px;
+    height: 100px;
+    padding: 3px;
+}
+
+
+/*
+    SUBMIT BUTTON
+*/
+button[type="submit"]{
+    
+}
+
+
+/*
+    GOOGLE MAP VIEW 
+*/
+
+.map_address{
+    padding: 10px;
+}
+
+.map_address iframe{
+}
