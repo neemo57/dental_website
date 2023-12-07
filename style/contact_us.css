@@ -17,14 +17,6 @@ body{
     background-size: cover;
 }
 
-.rightnav ul li a{
-    color: rgb(255, 0, 0);
-}
-
-.rightnav ul li a:visited{
-    color: rgb(255, 0, 0);
-}
-
 
 #submenu > li > a{
    color: yellow; 
@@ -43,12 +35,12 @@ body{
 */
 
 .contactus_title{
-    margin-top: 145px;
+    margin-top: 165px;
 }
 
 .contactus_title h2{
     font-family: 'DM sans';
-    font-size: 35px;
+    font-size: 37px;
     text-transform: uppercase;
     text-align: center;
     padding: 15px 0;
@@ -57,6 +49,13 @@ body{
     font-weight: 700;
     color: black;
     text-shadow: 1px 1px 2px black;
+    width: 40%;
+    margin: auto;
+    transition: width 2s linear;
+}
+
+.contactus_title h2.loaded{
+    width: 100%;
 }
 
 .contactus_form{
@@ -105,7 +104,7 @@ body{
     display: block;
     margin-right: 0px;
     width: 300px;
-    color: white;
+    color: darkblue;
 }
 
 
@@ -127,7 +126,7 @@ form textarea{
 /*
     SUBMIT BUTTON
 */
-button[type="submit"]{
+button[type="button"]{
     font-family: 'open-sans', sans-serif;
     background-color: #e5ef3f;
     color: #0785db;
@@ -139,7 +138,7 @@ button[type="submit"]{
     transition: 0.1s ease-in;
 }
 
-button[type="submit"]:hover{
+button[type="button"]:hover{
     color: #e5ef3f;
     background-color: #0785db;
     border: 1px solid black;
@@ -151,9 +150,100 @@ button[type="submit"]:hover{
     GOOGLE MAP VIEW 
 */
 
+.map_address h2{
+    padding: 7px 10px;
+    text-align: center;
+    color: white;
+    font-family: Helvetica;
+}
+
 .map_address{
     padding: 10px;
     margin: auto auto;
     border: 3px red solid;
     background-color: rgb(255, 0, 0, 0.7);
+}
+
+/*
+    THANK YOU CARD
+*/
+
+.thanks_card{
+    display: none;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: black 15px double;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px black;
+}
+
+.thanks_card img{
+    padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.thanks_card h5{
+    max-width: 320px;
+    padding: 2px 15px 2px 15px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: Tahoma;
+}
+
+.thanks_card > .wrapper{
+    position: relative;
+}
+
+.cross{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cross img{
+    width: 40px;
+    transition: width 0.1s ease-in;
+}
+
+.cross img:hover{
+    width: 50px;
+}
+
+/*
+    ERROR CARD
+*/
+
+.error_card{
+    display: none;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: black 15px double;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px black;
+}
+
+.error_card img{
+    max-width: 200px;
+    padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.error_card h5{
+    max-width: 320px;
+    padding: 2px 15px 2px 15px;
+    font-size: 22px;
+    text-align: justify;
+    font-family: Tahoma;
+}
+
+.error_card > .wrapper{
+    position: relative;
 }

@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="style/footer.css">
     <link rel="stylesheet" type="text/css" href="style/contact_us.css">
     <script src="js/script.js"></script>
+    <script src="js/loadh2.js"></script>
+    <script src="js/contact.js"></script>
 </head>
 
 <body>
@@ -41,7 +43,7 @@
         </div>
 
             <div class="contactus_title">
-                <h2>Contact us</h2>
+                <h2 id="contacttitle">Contact us</h2>
             </div>
 
             <div class="contactus_form">
@@ -50,27 +52,28 @@
                         <form method="post">
 
                             <label>First name:</label>
-                            <input type="text" required>
+                            <input id="fname" type="text" required>
                             <br><br>
                             
                             <label>Last name:</label>
-                            <input type="text" required>
+                            <input id="lname" type="text" required>
                             <br><br>
                          
 
                             <label>Email Address:</label>
-                            <input type="text" type="email" required  id="email" >
+                            <input id="email" type="text" type="email" required  id="email" >
                             <br><br>
 
                             <label>Your query:</label>
-                            <textarea id="query" placeholder="Your query here"></textarea>
+                            <textarea id="query" id="query" placeholder="Your query here"></textarea>
                             <br><br>
 
-                            <button type="submit">Send Query</button>
+                            <button type="button" onclick="go()">Send Query</button>
                         </form>
                     </div>
 
                     <div class="map_address">
+                        <h2>You can visit our office for in-person queries.</h2>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.2281806648107!2d-106.6418285229832!3d52.13017066501772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f6c9e7547479%3A0x64ea6646a6ebaecf!2sDental%20Education%20Clinic%2C%20USask%20College%20of%20Dentistry!5e0!3m2!1sen!2sca!4v1701903258653!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -106,6 +109,30 @@
                         <a href="https://www.x.com"><img src="imgs/x.png"></a>
                     </div>
                     
+                </div>
+            </div>
+
+            <div class="thanks_card" id="thankscard">
+                <div class="wrapper">
+                    <img src="imgs/thank_you.jpg">
+                    <h5 id="thankyoumsg">
+                        Your request has been submitted.
+                    </h5>
+                    <div class="cross">
+                        <img onclick="hide_thankyou_card()" src="imgs/cross.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="error_card" id="errorcard">
+                <div class="wrapper">
+                    <img src="imgs/error.png">
+                    <h5 id="errormsg">
+                        Your request has been submitted.
+                    </h5>
+                    <div class="cross">
+                        <img onclick="hide_error_card()" src="imgs/cross.png">
+                    </div>
                 </div>
             </div>
 
