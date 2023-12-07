@@ -68,7 +68,7 @@ body{
 */
 
 .formwrapper{
-    background: rgba(250, 35, 193, 0.9);
+    background: rgba(250, 35, 193, 0.8);
     border-radius: 3px;
     display: flex;
     flex-direction: row;
@@ -90,6 +90,9 @@ body{
     font-family: sans-serif;
     padding: 0px 10px;
     color: rgb(255, 255, 255);
+    border: 1px blue solid;
+    padding: 3px;
+    background-color: black;
 }
 
 .formwrapper .form_left form input{
@@ -100,9 +103,9 @@ body{
     border-bottom: 2px black solid;
     margin-bottom: 10px;
     display: block;
-    text-align: right;
     margin-right: 0px;
     width: 300px;
+    color: white;
 }
 
 
@@ -125,7 +128,22 @@ form textarea{
     SUBMIT BUTTON
 */
 button[type="submit"]{
-    
+    font-family: 'open-sans', sans-serif;
+    background-color: #e5ef3f;
+    color: #0785db;
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    width: 300px;
+    font-weight: 700;
+    font-size: 26px;
+    transition: 0.1s ease-in;
+}
+
+button[type="submit"]:hover{
+    color: #e5ef3f;
+    background-color: #0785db;
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
 }
 
 
@@ -135,7 +153,11 @@ button[type="submit"]{
 
 .map_address{
     padding: 10px;
+    margin: auto auto;
+    border: 3px red solid;
+    background-color: rgb(255, 0, 0, 0.7);
 }
 
 .map_address iframe{
+        
 }
