@@ -6,13 +6,8 @@ function go(){
     pnum = document.getElementById("pnum").value;
     email = document.getElementById("email").value;
     dtime = document.getElementById("dtime").value;
-    date = dtime.split('T')[0];
-    time = dtime.split('T')[1];
 
-    hours = parseInt(time.split(':')[0]);
-    minutes = time.split(':')[1];
-    app_date = new Date(date);
-    today = new Date();
+    
 
     if(!fname){
         show_error_box("Please type a valid first name.");
@@ -25,6 +20,11 @@ function go(){
     }
 
     if(!email){
+        show_error_box("Please type an email address.");
+        return;
+    }
+
+    if(!isValidEmail(email)){
         show_error_box("Please type a valid email address.");
         return;
     }
@@ -34,10 +34,30 @@ function go(){
         return;
     }
 
+    if(!parseInt(pnum)){
+        show_error_box("Please type a valid phone number.");
+        return;
+    }
+
     if(!addr){
         show_error_box("Please type your address.");
         return;
     }
+
+    if(!dtime){
+        show_error_box("Please choose an appointment date and time.");
+        return;
+    }
+
+    // PROCESS DATE AND TIME
+
+    date = dtime.split('T')[0];
+    time = dtime.split('T')[1];
+
+    hours = parseInt(time.split(':')[0]);
+    minutes = time.split(':')[1];
+    app_date = new Date(date);
+    today = new Date();
 
     if(!date || !time){
         show_error_box("Please choose an appointment date and time.");
@@ -69,6 +89,12 @@ function go(){
     var card = document.getElementById("thankscard");
     card.style.display="block";
 }
+
+function isValidEmail(email) {
+    // Function to check if an email address is valid by matching with a regular exp
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
 
 function show_error_box(msg){
     var txt = document.getElementById("errormsg");

@@ -62,14 +62,14 @@
     white-space: nowrap;
 }
 
-
 /*
     DIFFERENT CONTENT DIVISIONS AND THEIR BACKGROUNDS
 */
 
 .content1{
-    background: url("../imgs/bg.jpg");
+    background: url("../imgs/bgg0.jpg");
     background-size: cover;
+    position: relative;
 }
 
 .content2{
@@ -96,6 +96,10 @@
 /*
     LEAD DOCTOR INTRO 
 */
+
+.content2 .wrap{
+    padding-top: 10%;
+}
 
 .content2 .intro{
     display: flex;
