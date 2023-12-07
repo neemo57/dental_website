@@ -14,8 +14,7 @@
 */
 
 body{
-    background: url("../imgs/app.jpeg");
-    background-size: cover;
+    background-image: url("../imgs/app.jpeg");
 }
 
 /*
