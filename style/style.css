@@ -9,6 +9,14 @@
 
 
 /*
+    OVERRIDING COMMON METHODS
+*/
+
+.header_wrapper{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*
     ___ CONTENT BOX PROPERTIES ___
 */
 .content{

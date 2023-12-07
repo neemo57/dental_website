@@ -1,0 +1,53 @@
+.footer{
+    margin-top:20px;
+    background-color: rgba(56, 63, 77, 0.85);
+    color: white;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.footer:hover{
+    background-color: rgba(56, 63, 77, 1);
+}
+
+.upper{
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper ul{
+    list-style-type: none;
+}
+
+.about h4{
+    font-size: 22px;
+    padding: 7px 2px;
+    font-family: 'DM Sans';
+}
+
+.about ul li{
+    font-size: 18px;
+    padding: 1px 7px;
+}
+
+.socials{
+    padding: 10px 3px;
+    font-family: Helvetica;
+    display: flex;
+    justify-content: center;
+}
+
+.socials img{
+    width: 20px;
+    transition: width 0.3s ease;
+}
+
+.socials img:hover{
+    width: 25px;
+}
+
+.socials span{
+    margin: auto;
+}
