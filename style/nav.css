@@ -67,6 +67,7 @@ header{
 
 .logo img{
     max-height: 100px;
+    border-radius: 5px;
 }
 
 .rightnav{
