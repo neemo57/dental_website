@@ -1,4 +1,4 @@
-start_index=0;
+start_index=1;
 end_index=3;
 current_index=0;
 
@@ -27,10 +27,10 @@ function slider(direction="left"){
     console.log(file_name);
 
     if(!slider_image){
-        slider_image = document.getElementById("maincontent");
+        slider_image = document.getElementById("sliderimage");
     }
     
-     slider_image.style.backgroundImage = "url('" + file_name + "')";
+     slider_image.src = file_name;
 }
 
 function slider_right(){

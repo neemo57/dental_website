@@ -87,18 +87,62 @@
  IMAGE SCROLL BUTTONS
 */
 
-.imgscrollbtn{
-    position: fixed;
-    top: 40%;
-    left: 2%;
+/*
+    THE IMAGE SLIDER (CAROUSEL)
+*/
+
+.img_slider{
+    margin-top: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
 }
 
+/*
+    IMAGE SLIDER BUTTONS
+*/
+.arrow{
+    position: absolute;
+    transition: visiblity ;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.img_slider:hover .arrow{
+    opacity: 1;
+}
+
+.img_slider>img{
+    max-width: 90%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.arrow img{
+    width: 50px;
+    height: 40px;
+}
+
+.arrow:hover{
+    box-shadow: 1px 1px 30px white;
+}
+
+.left_arrow{
+    top: 45%;
+    left: 1%;
+}
+
+.right_arrow{
+    top: 45%;
+    right: 1%;
+}
 /*
     LEAD DOCTOR INTRO 
 */
 
 .content2 .wrap{
-    padding-top: 10%;
+    padding-top: 20px;
 }
 
 .content2 .intro{
