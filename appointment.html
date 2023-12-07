@@ -5,7 +5,9 @@
         <link rel="stylesheet" type="text/css" href="style/nav.css">
         <link rel="stylesheet" type="text/css" href="style/appointment.css">
         <link rel="stylesheet" type="text/css" href="style/footer.css">
+        <link rel="stylesheet" type="text/css" href="style/cards.css">
         <script src="js/script.js"></script>
+        <script src="js/appointment.js"></script>
     </head>
 
 <body>
@@ -56,22 +58,22 @@
                 <div class="booking_right">
                     <form method="post">
                        
-                        <label>First Name:</label> <input required placeholder="First Name" type="text" minlength="3"> 
+                        <label>First Name:</label> <input id="fname" required placeholder="First Name" type="text" minlength="3"> 
                         <br> 
-                        <label>Last Name:</label> <input required placeholder="Last Name" type="text" minlength="3">  
+                        <label>Last Name:</label> <input id="lname" required placeholder="Last Name" type="text" minlength="3">  
                         <br>
-                        <label>Address:</label><input required placeholder="Address" type="text" minlength="3">
+                        <label>Address:</label><input id="addr" required placeholder="Address" type="text" minlength="3">
                         <br>
-                        <label>Email Address:</label><input required placeholder="Email Address" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> 
+                        <label>Email Address:</label><input id="email" required placeholder="Email Address" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> 
                         <br>
-                        <label>Phone Number:</label><input required placeholder="Phone Number" type="tel" pattern="[0-9]{1, 10}" minlength="1"> 
+                        <label>Phone Number:</label><input id="pnum" required placeholder="Phone Number" type="tel" pattern="[0-9]{1, 10}" minlength="1"> 
                         <br>
                         <label id="longlabel">Please select the preferred <br>
                             date and time of appointment:</label>
                         <br>
-                        <input required type="datetime-local">
+                        <input id="dtime" required type="datetime-local">
                         <br>
-                        <button type="submit">Create an appointment</button>
+                        <button type="button" onclick="go()">Create an appointment</button>
                     </form>
                 </div>
             </div>
@@ -109,6 +111,35 @@
                 
             </div>
         </div>
+
+         <!-- 
+                ------------------------------
+                    THANK YOU AND ERROR CARDS
+                ------------------------------
+            -->
+            <div class="thanks_card" id="thankscard">
+                <div class="wrapper">
+                    <img src="imgs/thank_you.jpg">
+                    <h5 id="thankyoumsg">
+                        Your request has been submitted.
+                    </h5>
+                    <div class="cross">
+                        <img onclick="hide_thankyou_card()" src="imgs/cross.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="error_card" id="errorcard">
+                <div class="wrapper">
+                    <img src="imgs/error.png">
+                    <h5 id="errormsg">
+                        Your request has been submitted.
+                    </h5>
+                    <div class="cross">
+                        <img onclick="hide_error_card()" src="imgs/cross.png">
+                    </div>
+                </div>
+            </div>
 
 
     </section>
